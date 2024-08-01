@@ -1,0 +1,7 @@
+runtime: python310  # Python 3.10 sürümünü kullanmak için
+
+entrypoint: gunicorn -b :$PORT app:app
+
+handlers:
+- url: /.*
+  script: auto
