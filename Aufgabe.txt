@@ -1,0 +1,12 @@
+Description
+Input Capability: The script should allow the user to input one or multiple URLs of the websites to be scanned. This input can be provided through a simple text file, command-line arguments, or any user-friendly method you recommend.
+
+Scraping Mechanism: Implement a web scraping solution that navigates through the source code of the provided web pages to search for Vimeo embed codes or direct Vimeo links. The scraper must be efficient and capable of handling various website structures while adhering to ethical web scraping guidelines and respecting robots.txt files.
+
+Identification of Vimeo Content: The script should specifically look for patterns that match Vimeo embed codes (typically an <iframe> tag with a source URL containing "vimeo.com") and direct links to Vimeo videos (urls directly pointing to "vimeo.com/video/[video_id]"). Ensure accuracy in identifying these patterns to avoid false positives.
+
+Output Generation: After scanning the specified web pages, the script should output a list of URLs where Vimeo videos were found. This list should be easily accessible and readable (e.g., a text file or a CSV file). The output should include the original page URL and, if possible, the specific Vimeo video link or embed code found.
+
+Technical Requirements: Language: Python 3.x. Use the latest stable Python version to ensure compatibility and security. Libraries/Frameworks: You may use libraries such as BeautifulSoup, Requests, or Selenium for web scraping.
+
+Please document any external libraries used and ensure they are widely supported and maintained.
